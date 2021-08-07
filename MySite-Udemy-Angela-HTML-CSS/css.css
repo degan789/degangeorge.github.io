@@ -1,0 +1,317 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  width:auto;
+}
+
+/*MENU */
+ .nav{
+   display: flex;
+   justify-content:flex-end;
+   position: fixed;
+   z-index: 3;
+   width: 100%;
+
+ }
+ .smallNav{
+   display: none;
+ }
+ nav{
+  padding-right: 15%;
+
+ }
+ .nav ul{
+   display: flex;
+   list-style-type: none;
+   padding: 10px;
+
+ }
+ .nav li a{
+   padding: 10px;
+   text-decoration: none;
+   font-size: large;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: black;
+
+
+ }
+ .logo{
+   width: 3%;
+   height: 3%;
+   position: relative;
+   right: 50%;
+ }
+ 
+
+.profile{
+  width:40%;
+  position: relative;
+  left:30%;
+  top:20px;
+  text-align: center;
+}
+.colorme{
+  width: 90%;
+  position:relative;
+  left:20px;
+}
+
+.bkg{
+  height: 100vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  position: absolute;
+  width: 40%;
+  left: 29%;
+  font-size: 562%;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+  color:black;
+
+}
+
+/*TOP PAGE*/
+/*degan george TEXT from the top page*/
+
+.top {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 10% 30% auto;
+ }
+
+.top h1{
+  top:20%;
+  z-index: 1;
+}
+/* a web developer  TEXT from top page*/
+
+.webdev {
+  position: absolute;
+  left: 36%;
+  top: 40%;
+  font-family: 'montserat'sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 6px;
+  color:black;
+  z-index: 1;
+
+}
+h2{
+  color:#66bfbf;
+}
+.firsthr{
+  position: relative;
+  border-style: dotted;
+  width: 5%;
+  border:10px dotted #eaf6f6;
+  border-bottom: none;
+  top: 25px;
+}
+.secondhr{
+  position: relative;
+  border-style: dotted;
+  width: 5%;
+  border:10px dotted #eaf6f6;
+  border-bottom: none;
+  top: 10px;
+  left:35%;
+
+}
+.skills{
+  position: relative;
+  width:50%;
+  left:25%;
+  top:20px;
+  text-align: center;
+}
+.skills p{
+  text-align: left;
+  padding: 10px;
+}
+.skill-row{
+  padding: 50px;
+}
+.monitor{
+  width:30%;
+  float: left;
+  padding: 20px;
+}
+.programing{
+  width: 30%;
+  float: right;
+  padding: 20px;
+}
+
+h3{
+  color:#11999e;
+}
+.middle-container{
+  width: 100%;
+  position: absolute;
+  top:100%;
+  
+}
+
+
+.mountain {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  height: 80%;
+}
+
+
+.cloud {
+  position: absolute;
+  left: 12%;
+  top: 20%;
+  width: 10%;
+  height: auto;
+}
+
+.cloud2 {
+  position: absolute;
+  right: 15%;
+  top: 30%;
+  width: 15%;
+}
+.colorme{
+  width: 30%;
+}
+
+/*CONTACT ME MENU -bottom INFO*/
+
+.contact-me{
+  width: 50%;
+  position: relative;
+  left:25%;
+  text-align: center;
+}
+/*bootom container-tweeter-linkedin-socialmedia*/
+
+.bottom-container{
+  background-color: #66bfbf;
+  position: absolute;
+  top:240vh;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+.bottom-container a{
+  top:15px;
+  position: relative;
+  padding: 30px;
+  font-size: 20px;
+  color:#11999e;
+  text-decoration: none;
+}
+.bottom-container p{
+  position: relative;
+  top:20px;
+}
+/*buton copiat*/
+.btn {
+   background: #3D94F6;
+   border-radius: 10px;
+   color: #99C624;
+   font-size: 15px;
+   font-weight: 50px;
+   padding: 10px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+.linkedin{
+  width: 20px;
+  box-shadow: 10px 10px 10px;
+  margin: 10px;
+}
+
+
+@media screen and (max-width: 480px) {
+  
+  .top {
+    width: fit-content;
+    height: 100%;
+    position: absolute;
+
+
+  }
+   h1{
+    font-size: 4rem;
+    padding: 70px 0 0 0;
+    letter-spacing: 15px;
+    
+  }
+  
+  .scrol{
+    color:black;
+    opacity: 0.7;
+  } 
+  .webdev{
+    position: absolute;
+    top:60%;
+    color:black;
+    opacity: 0.5;
+  }
+  .mountain{
+    display: none;
+  }
+  .middle-container{
+    background-image:#ccc;
+    width: fit-content;
+    height: 100vh;
+  }
+  
+  .colorme{
+    width: 80%;
+    height: auto;
+  }
+  .nav{
+    display: none;
+    justify-content: flex-start;
+    background-color:#ccc;
+    opacity: 0.5;
+    height: 100vh;
+    z-index: 1;
+  }
+  .nav ul{
+    display: block;
+    height: auto;
+    position: relative;
+
+
+  }
+  .nav li{
+    display: flex;
+    border:3 px solid dark;
+
+  }
+  .nav li a{
+    position: relative;
+  }
+  
+  
+  .top {
+width: fit-content;
+  }
+  .colorme{
+    z-index: 1;
+  }
+  .bottom-container{
+    background-color: #66bfbf;
+    top:300%;
+    text-align: center;
+    height: 100px;
+  }
+}
